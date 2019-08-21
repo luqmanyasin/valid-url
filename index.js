@@ -25,7 +25,7 @@
         }
 
         // check for illegal characters
-        if (/[^a-z0-9\:\/\?\#\[\]\@\!\$\&\'\(\)\*\+\,\;\=\.\-\_\~\%]/i.test(value)) return;
+        if (/[^A-Za-z0-9\:\/\?\#\[\]\@\!\$\&\'\(\)\*\+\,\;\=\.\-\_\~\%一-龯]/g.test(value)) return;
 
         // check for hex escapes that aren't complete
         if (/%[^0-9a-f]/i.test(value)) return;
