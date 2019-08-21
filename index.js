@@ -41,7 +41,7 @@
 
         // from RFC 3986
         splitted = splitUri(value);
-        scheme = splitted[1]; 
+        scheme = splitted[1];
         authority = splitted[2];
         path = splitted[3];
         query = splitted[4];
@@ -96,7 +96,7 @@
 
         // from RFC 3986
         splitted = splitUri(value);
-        scheme = splitted[1]; 
+        scheme = splitted[1];
         authority = splitted[2];
         path = splitted[3];
         query = splitted[4];
@@ -124,13 +124,13 @@
 
         out += scheme + ':';
         out += '//' + authority;
-        
+
         if (port) {
             out += port;
         }
-        
+
         out += path;
-        
+
         if(query && query.length){
             out += '?' + query;
         }
@@ -138,7 +138,7 @@
         if(fragment && fragment.length){
             out += '#' + fragment;
         }
-        
+
         return out;
     }
 
